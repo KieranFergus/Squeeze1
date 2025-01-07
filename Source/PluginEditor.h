@@ -209,7 +209,7 @@ public:
             float releaseTime = juce::jmap(release, 0.0f, 1000.0f, 0.0f, totalWidth * 0.5f);
 
             // Normalize threshold height
-            float thresholdHeight = juce::jmap(threshold, -60.0f, 0.0f, midY, (float)bounds.getY());
+            float thresholdHeight = juce::jmap(threshold, -30.0f, 0.0f, midY, (float)bounds.getY());
 
             // Constrain threshold height to stay within bounds
             thresholdHeight = juce::jlimit<float>(bounds.getY(), midY, thresholdHeight);
